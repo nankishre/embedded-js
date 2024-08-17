@@ -1,0 +1,12 @@
+[package]
+name = "engine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+deno_ast = { version = "0.41.3", features = ["transpiling"] }
+deno_core = "0.303.0"
+tokio = { version = "1.39.2", features = ["full"] }
+
+[profile.release]
+strip = true
